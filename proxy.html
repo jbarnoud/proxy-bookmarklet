@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add journal proxy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/custom.css" rel="stylesheet" media="screen">
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Add journal proxy</h1>
+
+            <p>Tired of typing your academic proxy at the end of journals URL
+            manually? Create a button that does it for you, and add it to your
+            bookmarks.</p>
+        </div>
+    </div>
+
+    <div>
+        <div class="input-group input-group-lg">
+            <input type="text" class="form-control input-lg" id="url-input">
+            <span class="input-group-btn">
+                <button class="btn btn-primary btn-lg" type="button" id="create">
+                    <span class="glyphicon glyphicon-cog"></span>&nbsp;Create!
+                </button>
+            </span>
+        </div><!-- /input-group -->
+    </div>
+
+    <div id="error" class="alert alert-danger">
+        Hey! You must type something.
+    </div>
+
+    <div class="text-center">
+        <a class="btn btn-danger btn-lg" id="bookmarklet" title="Add proxy">
+            Type proxy adress
+        </a>
+    </div>
+
+</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/build.js"></script>
+</body>
+</html>
+
