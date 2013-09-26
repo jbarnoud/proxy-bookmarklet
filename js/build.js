@@ -82,8 +82,9 @@ function change() {
 function main() {
     set_input();
     $("#error").hide();
-    document.getElementById("url-input").onkeyup = change;
+    document.getElementById("url-input").oninput = change;
     document.getElementById("create").onclick = create;
+    document.getElementById("proxy-form").action = 'javascript:(create());';
 }
 
 window.onload = main;
