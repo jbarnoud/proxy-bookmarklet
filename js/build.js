@@ -82,7 +82,7 @@ function change() {
 function main() {
     set_input();
     $("#error").hide();
-    document.getElementById("url-input").onkeyup = change;
+    document.getElementById("url-input").oninput = change;
     document.getElementById("create").onclick = create;
 }
 
