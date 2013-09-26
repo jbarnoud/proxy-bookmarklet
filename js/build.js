@@ -84,6 +84,7 @@ function main() {
     $("#error").hide();
     document.getElementById("url-input").oninput = change;
     document.getElementById("create").onclick = create;
+    document.getElementById("proxy-form").action = 'javascript:(create());';
 }
 
 window.onload = main;
