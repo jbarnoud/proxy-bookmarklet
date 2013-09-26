@@ -58,7 +58,7 @@ function create() {
         // Update button color and text
         set_button('success');
     } else {
-        $("#error").show();
+        $("#error").fadeIn();
     }
 }
 
@@ -68,7 +68,7 @@ function create() {
  * field is empty, then set the button to 'empty'.
  */
 function change() {
-    $("#error").hide();
+    $("#error").fadeOut();
     var proxy_url = document.getElementById("url-input").value;
     if (proxy_url.length == 0) {
         set_button('empty');
